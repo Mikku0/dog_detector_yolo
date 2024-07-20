@@ -12,7 +12,6 @@ if not cap.isOpened():
     print("can't find video file")
     exit()
 
-
 frame_width = int(cap.get(3))  # video properties
 frame_height = int(cap.get(4))
 fps = cap.get(cv2.CAP_PROP_FPS)

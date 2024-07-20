@@ -6,7 +6,7 @@ from sort.sort import Sort  # SORT algorithm
 
 model = YOLO('runs/detect/train3/weights/best.pt')  # dogs detection model
 
-cap = cv2.VideoCapture('dogs2.mp4')  # example video
+cap = cv2.VideoCapture('dogs.mp4')  # example video
 
 if not cap.isOpened():
     print("can't find video file")
@@ -18,7 +18,7 @@ frame_height = int(cap.get(4))
 fps = cap.get(cv2.CAP_PROP_FPS)
 
 # result video
-out = cv2.VideoWriter('output_dogs22.mp4', cv2.VideoWriter_fourcc(*'mp4v'), fps, (frame_width, frame_height))
+out = cv2.VideoWriter('output_dogs.mp4', cv2.VideoWriter_fourcc(*'mp4v'), fps, (frame_width, frame_height))
 
 tracker = Sort(max_age=30)  # SORT algorithm with 30 frames without new object id detections
 

@@ -1,0 +1,7 @@
+path: D:/Python_projects/dog_detector_yolo/training_dogs
+train: train/images
+val: valid/images
+test: test/images
+
+names:
+  0: dog

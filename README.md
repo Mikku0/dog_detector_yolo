@@ -42,21 +42,28 @@ I used Simple Online and Realtime Tracking algorithm from [this](https://github.
 
 ## ✨ Features
 
-- **Object Detection**: Utilizes the YOLO model for detecting dogs in video clips. The model is loaded with pre-trained weights (`best.pt`).
+- **Object detection**: Utilizes the YOLO model for detecting dogs in video clips. The model is loaded with pre-trained weights (`best.pt`).
 
-- **Object Tracking**: Implements the SORT algorithm to track objects across multiple video frames, assigning unique identifiers (IDs) to detected objects.
+- **Object tracking**: Implements the SORT algorithm to track objects across multiple video frames, assigning unique identifiers (IDs) to detected objects.
 
-- **Detection Visualization**: Draws bounding boxes around detected objects and displays their IDs on video frames. Visualization includes:
+- **Detection visualization**: Draws bounding boxes around detected objects and displays their IDs on video frames. Visualization includes:
   - Colored bounding boxes (green) for detected objects.
   - Labels with object IDs.
 
-- **Video Processing**: Reads frames from a video file, processes them in real-time, and saves the results to a new video file (`output_dogs.mp4`).
+- **Video processing**: Reads frames from a video file, processes them in real-time, and saves the results to a new video file (`output_dogs.mp4`).
 
-- **Video Handling**: Automatically detects the dimensions and frame rate (FPS) of the input video file and sets appropriate parameters for the output video.
+- **Video handling**: Automatically detects the dimensions and frame rate (FPS) of the input video file and sets appropriate parameters for the output video.
 
-- **Object Management**: Allows tracking of objects for a specified number of frames (`max_age=30`), enabling tracking of objects that may briefly disappear from view.
+- **Object management**: Allows tracking of objects for a specified number of frames (`max_age=30`), enabling tracking of objects that may briefly disappear from view.
 
 - **Extensibility**: Easily modifiable and adaptable to different object detection models or tracking algorithms.
 
+## 🔜 To be done
+
+- **Model improving**: improving the detection model to detect the objects better and more efficiently
+
+- **Data validation**: adjusting code to prevent boxes from disappearing between frames
+
+- **Results file**: saving results to .csv file, assigned by object Id
 
 
